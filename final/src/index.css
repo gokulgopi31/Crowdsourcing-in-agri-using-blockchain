@@ -1,0 +1,487 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Anuphan', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App{
+  display: flex;
+}
+
+.navbar{
+  width: 200px;
+  height: 100rem;
+  background-color: black;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+}
+
+ul{
+  margin-block-start: 0em;
+  padding: 0px;
+  list-style-type: none;
+  position: sticky;
+  top: 0px;
+  cursor: default;
+}
+
+.navbar-cont{
+  text-align: center;
+  padding: 20px;
+  color: white;
+   
+}
+
+.navbar-cont-active{
+  text-align: center;
+  padding: 20px;
+  color: black;
+  background-color: white;
+   
+}
+
+.navbar-cont:hover{
+  color: black;
+  background-color: white;
+}
+
+.title{
+  padding: 20px 20px 150px 20px;
+  color: white;
+   
+  font-size: 35px;
+}
+
+.searchBar{
+  height: 70px;
+  width: 1336px;
+  background-color: black;
+  position: sticky;
+  top:0px;
+  text-align: center;
+  z-index: 10;
+}
+
+
+.searchBar-input{
+  outline: 10px;
+  width: 45%;
+  padding: 5px 17px;
+  margin: 20px 5px;
+  font-size: 20px;
+  box-sizing: border-box; 
+  background-color: black;
+  color: white;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  border-bottom: 1px solid white;
+}
+.content{
+  display: flex;
+  flex-wrap: wrap;
+}
+.post{
+  margin: 25px;
+  width:370px;
+  height: 400px;
+  box-shadow: 1px 1px 15px rgb(80, 80, 80);
+  background-color: white;
+  border-radius: 6px;
+}
+
+.post-title{
+  overflow: hidden;
+  text-align: left;
+  padding-top:10px ;
+  padding-left: 20px;
+  font-size: 20px;
+  height: 28px;
+}
+.post-desc{
+  font-size: 15px;
+   
+  text-align: left;
+  padding :20px ;
+  height: 38px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+.post-image{
+  height: 100px;
+  padding :20px ;
+  text-align: left;
+}
+
+.post-image-img{
+  height: 100px;
+}
+
+.post-dis{
+  display:flex;
+   
+  font-size: 15px;
+}
+.post-key{
+  width: 95px;
+  padding:0px 5px 7px 20px;
+  font-weight: bold;
+  text-align: left;
+}
+.post-value{
+  padding:0px 5px 7px 5px; 
+  text-align: left;
+}
+
+.post-buttons{
+  text-align: left;
+  display: flex;
+  align-items: left;
+  padding:10px 20px;
+}
+
+.post-icons{
+  cursor: pointer;
+  margin: 0px 10px 0px 0px;
+  color: rgb(134, 134, 134);
+}
+.post-icons-active{
+  margin: 0px 10px 0px 0px;
+  color: rgb(241, 59, 39);
+}
+.post-icons:hover{
+  margin: 0px 10px 0px 0px;
+  color: rgb(241, 59, 39);
+}
+.post-comment{
+  margin-left: 140px;
+  font-size: 15px;
+  border-bottom: 1px dotted #000;
+  cursor: pointer;
+}
+.post-comment:hover{
+  color: rgb(40, 98, 255);
+  border-bottom: 1px dotted rgb(40, 98, 255);
+}
+.post-footer{
+  border-top: 1px solid  rgb(188, 188, 188);
+  text-align: left;
+  padding-left: 20px;
+  padding-top: 5px;
+  display: flex;
+  color: rgb(122, 122, 122);
+}
+.post-posted{
+  font-weight: bold;
+  font-size: 10px;
+}
+.post-by{
+  margin-left: 2px;
+  font-size: 9px;
+}
+
+.create-model{
+  width:100vw;
+  height:100vh;
+}
+
+.create{
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  padding: 20px;
+  width:700px;
+  height:480px;
+  box-shadow: 1px 1px 15px rgb(80, 80, 80);
+  background-color: white;
+  border-radius: 6px;
+}
+.create-head{
+   
+  font-size: 20px;
+  border-bottom: 1px solid rgb(168, 168, 168);
+}
+.create-title{
+  padding-top: 20px;
+  display: flex;
+  font-size: 15px;
+   
+  margin-top: 20px;
+}
+
+.create-key{
+   
+  text-align: left;
+  font-size: 15px;
+  width: 130px;
+}
+.create-value{
+  width: 80%;
+  
+}
+
+.create-value-input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  width:90%;
+  font-size: 15px;
+}
+.create-value-input:focus {
+  outline: none;
+}
+
+.create-desc{
+  display: flex;
+  margin-top: 20px;
+}
+
+textarea{
+  resize: none;
+}
+
+.create-pred{
+  width: 500px;
+  margin-bottom: 20px;
+}
+.create-uploaded{
+  margin-top: 20px;
+  height: 120px;
+}
+.create-button{
+  font-size: 15px;
+   
+  display: flex;
+  cursor: default;
+  margin:20px 0 0 480px;
+}
+
+.create-cancel:hover{
+  background-color: rgb(255, 83, 83);
+  color: white;
+  width: 70px;
+  height: 35px;
+  border-radius: 20px;
+  padding-top:14px;
+  padding-left: 20px;
+  box-shadow: 1px 1px 15px rgb(80, 80, 80);
+}
+.create-cancel{
+  background-color: white;
+  color: rgb(255, 83, 83);
+  width: 70px;
+  height: 35px;
+  border-radius: 20px;
+  padding-top:14px;
+  padding-left: 20px;
+  border: 1px solid rgb(255, 83, 83);
+  margin-left: 20px;
+}
+
+.create-post:hover{
+  background-color: rgb(136, 193, 154);
+  color: white;
+  width: 70px;
+  height: 35px;
+  border-radius: 20px;
+  padding-top:14px;
+  padding-left: 25px;
+  box-shadow: 1px 1px 15px rgb(80, 80, 80);
+}
+.create-post{
+  background-color: white;
+  color: rgb(136, 193, 154);
+  width: 70px;
+  height: 35px;
+  border-radius: 20px;
+  padding-top:14px;
+  padding-left: 25px;
+  border: 1px solid rgb(136, 193, 154);
+  margin-left: 20px;
+}
+.create-icon{
+  position: fixed;
+  top: 730px;
+  left: 1420px;
+}
+
+.view-model{
+  width:100vw;
+  height:100vh;
+}
+
+.view{
+  width: 900px;
+  height: 540px;
+  box-shadow: 1px 1px 15px rgb(80, 80, 80);
+  background-color: white;
+  border-radius: 6px;
+  padding: 20px;
+  position: absolute;
+  top: 10%;
+  left: 20%;
+  display: flex;
+}
+.view-cont{
+  width: 580px;
+  padding-right: 20px;
+}
+
+.view-posted-by{
+  border-bottom: 1px solid  rgb(188, 188, 188);
+  text-align: left;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: flex;
+}
+.view-posted{
+  font-weight:500;
+  font-size: 15px;
+}
+.view-by{
+  margin-left: 2px;
+  font-size: 14px;
+}
+.view-title{
+  padding-top: 10px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.view-desc{
+  margin-top: 10px;
+  width: 100%;
+  height: 200px;
+  background-color: rgb(251, 251, 251);
+  overflow: auto;
+  padding:10px 0 10px 0;
+}
+.view-image-dis{
+  padding-top: 40px;
+  display: flex;
+}
+.view-image-img{
+  height: 150px;
+}
+.view-pairs{
+  display: flex;
+  padding:0px 0px 20px 0px;
+}
+
+.view-key{
+  font-weight: 600;
+  width: 120px;
+}
+.view-props{
+  padding:10px 0px 0px 10px;
+}
+.view-icons{
+  cursor: pointer;
+  margin: 25px 10px 10px 0px;
+  color: rgb(134, 134, 134);
+}
+.view-icons-active{
+  margin: 25px 10px 10px 0px;
+  color: rgb(241, 59, 39);
+}
+.view-icons:hover{
+  color: rgb(241, 59, 39);
+}
+.view-comment{
+  margin-top: 5px;
+  width: 300px;
+  border-radius: 10px;
+  border:2px solid rgb(200, 200, 200);
+}
+
+.view-comment-input{
+  padding: 10px 10px;
+  display: flex;
+}
+.view-comment-area{
+  padding: 5px;
+  border-radius: 5px;
+  border-color: rgb(200, 200, 200);
+}
+.view-icon-write{
+  margin: 15px 0 0 5px;
+  color: rgb(200, 200, 200);
+}
+.view-icon-write:hover{
+  margin: 15px 0 0 5px;
+  color: black;
+}
+.view-comment-text{
+  height: 460px;
+  overflow: auto;
+}
+.comment{
+  margin: 10px;
+  min-width: 210px;
+  max-width: 220px;
+  padding: 5px 0 5px 5px;
+  background-color: rgb(234, 232, 232);
+  border-radius: 20px 20px 20px 0px;
+  min-height: 30px;
+  font-size: 15px;
+}
+
+.best-comment{
+  margin: 10px;
+  max-width: 220px;
+  min-width: 210px;
+  padding: 5px 0 5px 5px;
+  background-color: rgb(158, 255, 145);
+  border-radius: 20px 20px 20px 0px;
+  min-height: 30px;
+  font-size: 15px;
+}
+.comment-by{
+  border-top: 1px dashed rgb(186, 186, 186);
+  margin-top: 3px;
+  font-size: 8px;
+}
+
+.comment-msg{
+  padding-left: 10px;
+}
+.view-close{
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-weight: 700;
+  color: rgb(207, 207, 207);
+  font-size: 20px;
+}
+.view-close:hover{
+  color:black;
+  cursor: default;
+}
+.load-model{
+  position: fixed;
+  width:100vw;
+  text-align: center;
+  padding-top: 25%;
+  z-index: 200;
+}
+.no-post{
+  position: absolute;
+  top: 25%;
+  left: 45%;
+  font-size: 40px;
+  color:rgb(122, 122, 122);
+}
+.gift:hover{
+  color: green;
+}

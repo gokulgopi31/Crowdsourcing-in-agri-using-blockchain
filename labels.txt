@@ -1,0 +1,16 @@
+0 Apple-BlackRot
+1 Apple-Scab
+2 Apple-rust
+3 Citrus-BlackSpot
+4 Citrus-Cancer
+5 Citrus-Greening
+6 Corn-CommonRust
+7 corn-grey-leafspot
+8 grape-BlackRot
+9 Grape-BlackMeasels
+10 Potato-EarlyBlight
+11 Potato-LateBlight
+12 Tomato-BacterialSpot
+13 TomatoLateBlight
+14 Tomato-MosaicVirus
+15 Tomato-SpiderMites
